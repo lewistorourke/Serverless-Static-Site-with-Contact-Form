@@ -136,7 +136,7 @@ This is the expected behaviour before CloudFront is configured.
 
 The `index.html` file was successfully uploaded to the private S3 bucket.
 
-![](screenshots/01-upload-success.png)
+![](screenshots/01-index-upload-success.png)
 
 ---
 
@@ -146,9 +146,7 @@ Attempting to access the uploaded object directly through its S3 URL returned an
 
 This verified that the bucket remained private and could not be accessed directly from the public internet.
 
-![](screenshots/02-access-denied.png)
-
----
+![](screenshots/02-direct-s3-access-denied.png)
 
 # Lessons Learned
 
