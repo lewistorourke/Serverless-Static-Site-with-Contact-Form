@@ -213,25 +213,37 @@ This confirmed that:
 
 ## Selecting the Private S3 Origin
 
-The private S3 bucket `lewis-cloud-portfolio-site` was selected as the CloudFront origin.
+The private S3 bucket `lewis-cloud-portfolio-site` was selected as the origin for the CloudFront distribution.
 
 ![](screenshots/01-select-s3-origin.png)
 
 ---
 
+## CloudFront Distribution Created
+
+The CloudFront distribution `cloud-portfolio-static-site` was successfully created and assigned a public CloudFront domain.
+
+At this point, the distribution was still deploying and the Default root object had not yet been configured.
+
+![](screenshots/02-cloudfront-distribution-created.png)
+
+---
+
 ## Initial CloudFront Access Denied Error
 
-The CloudFront domain initially returned an `AccessDenied` XML response because the Default root object had not been set.
+Opening the CloudFront domain initially returned an `AccessDenied` XML response because the Default root object had not been set.
 
-![](screenshots/02-cloudfront-access-denied.png)
+CloudFront therefore did not know that a request to `/` should return `index.html`.
+
+![](screenshots/03-cloudfront-access-denied.png)
 
 ---
 
 ## CloudFront Website Working
 
-After setting the Default root object to `index.html`, the CloudFront domain successfully displayed the test page.
+After setting the Default root object to `index.html` and allowing the distribution to redeploy, the CloudFront domain successfully displayed the test page.
 
-![](screenshots/03-cloudfront-site-working.png)
+![](screenshots/04-cloudfront-site-working.png)
 
 ---
 
