@@ -193,7 +193,7 @@ The API endpoint was tested directly using a POST request.
 ```bash
 curl -X POST https://3rxwrsc561.execute-api.us-east-1.amazonaws.com/contact \
 -H "Content-Type: application/json" \
--d '{"name":"API Test","email":"apitest@example.com","message":"Testing via API Gateway"}'
+-d '{"name":"API Test","email":"lewisorourke29@gmail.com","message":"Testing via API Gateway"}'
 ```
 
 Response:
