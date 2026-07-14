@@ -1,0 +1,7 @@
+curl -X POST https://3rxwrsc561.execute-api.us-east-1.amazonaws.com/contact \
+  -H "Content-Type: application/json" \
+  -d '{"name": "API Test", "email": "lewisorourke29@gmail.com", "message": "Testing via API Gateway"}'
+
+
+Response Recieved:
+{"message": "Submission received", "submissionId": "f4a215a9-15e9-4b3c-a44a-e52cb26938fc"}
